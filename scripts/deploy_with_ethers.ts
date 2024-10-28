@@ -6,7 +6,7 @@ import { deploy } from './ethers-lib'
 
 (async () => {
   try {
-    const result = await deploy('Storage', [])
+    const result = await deploy('UChicagoFinMath', ["0x035E2Ee7aB6506F6B3e9d64b3fC774D3eB7D6a42"])
     console.log(`address: ${result.address}`)
   } catch (e) {
     console.log(e.message)
